@@ -5,27 +5,8 @@
     <br />
     <p id="p" style="min-height:30px"></p>
     <div id="Input" contenteditable="true" style="min-height:80px;max-width:600px ;font-size:20px;background-color:lightgreen"></div>
-    <input onclick="AddElement()" type="button" value="Hinzufügen" style="margin-top:20px" />
+    <input onclick="AddElement()" type="button" value="HinzufÃ¼gen" style="margin-top:20px" />
     <input onclick="showBody()" type="button" value="ShowBoddy" style="margin-top:20px" />
     <p id="BoddySpiegel"></p>
 </body>
 </html>
-<script>
-    function AddElement()
-    {
-        console.log("TEst");
-        var meindiv = document.createElement("div");
-        meindiv.id = "test";
-        meindiv.innerHTML = "Hallo";
-        document.body.appendChild(meindiv);
-    }
-    function showBody()
-    {
-        var Test = document.getElementById("Boddy").innerHTML;
-        console.log(Test);
-        var index = Test.indexOf("<script>"[2]);
-        var Test2 = Test.substring(0, index);
-        console.log(Test2);
-    }
-   
-</script>
